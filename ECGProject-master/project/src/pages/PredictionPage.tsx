@@ -182,11 +182,11 @@ const PredictionPage: React.FC = () => {
         setError(null); // Clear previous errors
 
         const formData = new FormData();
-        formData.append('file', file);
+        formData.append('image', file);
         formData.append('email', email); // Ensure your backend expects 'email' in formData
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/predict/', {
+            const response = await fetch('https://cnnmodelecg.up.railway.app/predict/', {
                 method: 'POST',
                 body: formData,
         });

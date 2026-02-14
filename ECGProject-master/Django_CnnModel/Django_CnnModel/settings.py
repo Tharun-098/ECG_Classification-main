@@ -57,7 +57,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173", # <--- CHANGE THIS TO 5173
-    "http://127.0.0.1:5173", # <--- CHANGE THIS TO 5173 (good practice to include both localhost and 127.0.0.1)
+    "http://127.0.0.1:5173",
+     # <--- CHANGE THIS TO 5173 (good practice to include both localhost and 127.0.0.1)
     # Add your production frontend URL here when deploying
 ]
 
